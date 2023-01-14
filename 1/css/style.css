@@ -1,0 +1,129 @@
+body {
+    margin-left: 4%;
+    margin-top: 4%;
+}
+
+.item1_wrapper {
+    width: 400px;
+    height: 100px;
+    background-color: #141f40;
+
+}
+
+.item1_flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 160px;
+    height: 60px;
+    background-color: white;
+    position: relative;
+    left: 55%;
+    top: 20%;
+}
+
+.box40 {
+    width: 40px;
+    height: 40px;
+    background-color: #a9004b;
+}
+
+.item2_wrapper {
+    display: flex;
+}
+
+.item2_flex1 {
+    width: 150px;
+    height: 250px;
+    background-color: #80bfa8;
+}
+
+.item2_flex2 {
+    width: 250px;
+    height: 250px;
+    background-color: #8c2727;
+}
+
+.item2_flex2 :first-child{
+    margin-bottom: 10px;   
+}
+
+.item2_flex2 :last-child{
+    margin-top: 10px;   
+}
+
+
+.box140 {
+    width: 140px;
+    height: 40px;
+    background-color: #ff863f;
+    border: 5px solid white;
+    box-sizing: content-box;
+    position: relative;
+    top: 40px;
+    left: 40px;
+    bottom: 40px;
+}
+
+.item3 {
+    width: 400px;
+    height: 100px;
+    background-color: #d98d30;
+}
+
+@media(max-width:479px) {
+    .item1_wrapper {
+        width: 200px;
+        height: 200px;
+        background-color: #141f40;
+    }
+
+    .item1_flex {
+        display: block;
+        width: 60px;
+        height: 160px;
+        background-color: white;
+        position: relative;
+        left: 70px;
+        top: 20px;
+    }
+
+    .box40 {
+       margin-top: 10px;
+       position: relative;
+       left: 10px;
+       top: 10px; 
+    }
+
+    .item2_flex1 {
+        width: 200px;
+        height: 100px;
+        background-color: #80bfa8;
+    }
+
+    .item2_wrapper {
+        display: block;
+    }
+
+    .item2_flex2 {
+        width: 200px;
+        height: 200px;
+        background-color: #8c2727;
+    }
+
+    .box140 {
+        width: 140px;
+        height: 40px;
+        position: relative;
+        top: 20px;
+        left: 30px;
+        box-sizing: boder-box;
+    }
+
+    .item3 {
+        width: 200px;
+        height: 100px;
+    }
+
+
+}
