@@ -12,7 +12,7 @@ body {
 
 .item1_flex {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 160px;
     height: 60px;
@@ -107,7 +107,8 @@ body {
 
     .item2_flex2 {
         width: 200px;
-        height: 200px;
+        height: auto;
+        padding-bottom: 40px;
         background-color: #8c2727;
     }
 
