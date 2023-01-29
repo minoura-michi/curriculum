@@ -1,31 +1,33 @@
 <?php
-$suji = $_POST['number'];
-$suji = mt_rand(0, 9);
+$number = $_POST['number'];
+$array = str_split($number);
+$keys = array_rand($array,1);
+$num = $array[$keys];
 
 
 ?>
 <p><?php echo date("Y/m/d");?>の運勢は</p>
-<p>選ばれた数字は<?php echo $suji;?></p>
+<p>選ばれた数字は<?php echo $num;?></p>
 <?php
-if($suji == 0){
+if($num == 0){
     echo '凶';
-}elseif($suji == "1"){
+}elseif($num == 1){
     echo '小吉';
-}elseif($suji == "2"){
+}elseif($num == 2){
     echo '小吉';
-}elseif($suji == "3"){
+}elseif($num == 3){
     echo '小吉';
-}elseif($suji == "4"){
+}elseif($num == 4){
     echo '中吉';
-}elseif($suji == "5"){
+}elseif($num == 5){
     echo '中吉';
-}elseif($suji == "6"){
+}elseif($num == 6){
     echo '中吉';
-}elseif($suji == "7"){
+}elseif($num == 7){
     echo '吉';
-}elseif($suji == "8"){
+}elseif($num == 8){
     echo '吉';
-}elseif($suji == "9"){
+}elseif($num == 9){
     echo '大吉';
 }
 ?>
