@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+html{
+    background-color: rgb(158, 157, 156);
+    color: white;
+    font-family: '游明朝','Yu Mincho',YuMincho,'Hiragino Mincho Pro',serif;
+    text-align: center;
+}
+
+h1{
+    margin-top: 10%;
+    text-align: center;
+    border-bottom: 4px solid white;
+}
+
+form{
+    margin-top: 4%;
+}
+
+.q_top,.anser_top{
+    margin-top: 4%;
+}
