@@ -4,9 +4,9 @@ $language_answer = $_POST['language_a'];
 $command_answer = $_POST['command_a'];
 $name = $_POST['name'];
 
-$port_seikai = 80;
-$language_seikai = 'HTML';
-$command_seikai = 'select';
+$port_seikai= $_POST['port_kotae'];
+$language_seikai = $_POST['language_kotae'];
+$command_seikai = $_POST['command_kotae'];
 
 //[question.php]から送られてきた名前の変数、選択した回答、問題の答えの変数を作成
 

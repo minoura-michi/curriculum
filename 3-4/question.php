@@ -22,9 +22,11 @@ $name = $_POST['my_name'];?>
 <!--③ 問題のradioボタンを「foreach」を使って作成する-->
 <?php
 $port = [80,22,20,21];
+$port_kotae =$port[0];
 
 foreach ($port as $value1){?>
     <input type="radio" name="port_a" value="<?php echo $value1;?>">
+    <input type="hidden" name="port_kotae" value="<?=$port_kotae;?>">
  <?php echo $value1;
 }
 ?>
@@ -36,9 +38,11 @@ foreach ($port as $value1){?>
 <?php
 
 $language = ['PHP','Python','JAVA','HTML'];
+$language_kotae =$language[3];
 
 foreach ($language as $value2){?>
     <input type="radio" name="language_a" value="<?php echo $value2;?>">
+    <input type="hidden" name="language_kotae" value="<?=$language_kotae;?>">
    <?php echo $value2;
 }
 
@@ -49,9 +53,13 @@ foreach ($language as $value2){?>
 <?php
 
 $command = ['join','select','insert','update'];
+$command_kotae =$command[1];
+
 
 foreach ($command as $value3){?>
     <input type="radio" name="command_a" value="<?php echo $value3;?>">
+    <input type="hidden" name="command_kotae" value="<?=$command_kotae;?>">
+
    <?php echo $value3;
 }
 ?>
