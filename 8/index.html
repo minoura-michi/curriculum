@@ -47,9 +47,14 @@
 
     <script>
 
+        // プルダウンで「日本語」が選択されたら、「en」クラスを取得し
+        // クラス名「after」が追加され、「display:none」が実行されるように
+        // したいのですが、うまくいきません。
+
         //①onchangeで使用されている関数の中身を実装してください。
     function changeLang() {
-            let hyoji = document.getElementById('pldown').value;         
+            let hyoji = document.getElementById('pldown').value;   
+            
            
             if (hyoji === "日本語") {   
                 let eng = document.getElementsByClassName('en'); 
