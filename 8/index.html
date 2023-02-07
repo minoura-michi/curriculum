@@ -16,15 +16,11 @@
             padding: 10px;
         }
 
-        .after {
-            display: none;
-        }
-
     </style>
 </head>
 
 <body>
-    <select id="pldown" onchange="changeLang()">
+    <select id="pldown" onchange="changeLang(this)">
         <option id="select">選択してください</option>
         <option id="selected_jpn">日本語</option>
         <option id="selected_en">English</option>
@@ -47,19 +43,30 @@
 
     <script>
 
-        // プルダウンで「日本語」が選択されたら、「en」クラスを取得し
-        // クラス名「after」が追加され、「display:none」が実行されるように
-        // したいのですが、うまくいきません。
+        let jpn = document.getElementsByClassName("jpn")[0];
+        let en = document.getElementsByClassName("en")[0];
+
 
         //①onchangeで使用されている関数の中身を実装してください。
-    function changeLang() {
+    function changeLang(select) {
             let hyoji = document.getElementById('pldown').value;   
-            
-           
-            if (hyoji === "日本語") {   
-                let eng = document.getElementsByClassName('en'); 
-                eng.classList.add("after");
-            }
+
+            if(hyoji == "日本語"){
+
+                en.style.display ="none";
+                jpn.style.display ="block";
+
+        }else if(hyoji == "English"){
+               
+            en.style.display ="block";
+            jpn.style.display ="none";
+
+        }else if(hyoji == "全て表示"){
+               
+               en.style.display ="block";
+               jpn.style.display ="block";
+
+           }
         }
 
 
