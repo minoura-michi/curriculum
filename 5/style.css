@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+*{
+    margin: 0 auto;   
+}
+
+/* 共通 */
+
+.same_wrapper{
+    margin-top: 8%;
+    width: fit-content;
+}
+
+.btn{
+    border-radius: 5px;
+    background: rgb(91, 198, 217);
+    color: #fff;
+    margin-left: 2%;
+    border: none;
+    height: 35px;
+}
+
+.button{
+    margin-top: 20px;
+    border-radius: 5px;
+    background: rgb(44, 105, 196);
+    color: #fff;
+    margin-left: 2%;
+    border: none;
+    width: 120px;
+    height: 35px;
+}
+
+/* ログインページ */
+
+.login_title_wp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login_title{
+    text-align: left;
+    font-size: 20px;
+    height: 35px;
+    line-height: 35px;
+}
+
+/* 在庫一覧ページ */
+
+.main_wrapper{
+    margin: 8% auto;
+    text-align: center;
+    /* width: 50%; */
+}
+
+.main_btn{
+    width: 60%;
+    text-align: left;
+}
+
+.list_wrapper{
+    width: 60%;
+    margin-top: 2%;
+    border-collapse: collapse;
+}
+
+.boder,.boder_1{
+    border: 1px solid rgb(190, 190, 182);
+    padding: 2%;
+}
+
+.boder_1{
+    background-color: rgb(233, 236, 236);
+}
+
+.btn1{
+    margin-top: 20px;
+    border-radius: 5px;
+    background: rgb(44, 105, 196);
+    color: #fff;
+    /* margin-left: 2%; */
+    border: none;
+    height: 35px;
+}
+
+.btn2{
+    border-radius: 5px;
+    background: rgb(153, 161, 163);
+    color: #fff;
+    margin-left: 2%;
+    border: none;
+    height: 35px;
+}
+
+.btn3{
+    border-radius: 5px;
+    background: rgb(247, 5, 62);
+    color: #fff;
+    margin-left: 2%;
+    border: none;
+    height: 35px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
