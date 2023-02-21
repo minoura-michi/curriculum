@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <select id="pldown" onchange="changeLang(this)">
+    <select id="pldown" onchange="changeLang()">
         <option id="select">選択してください</option>
         <option id="selected_jpn">日本語</option>
         <option id="selected_en">English</option>
@@ -48,7 +48,7 @@
 
 
         //①onchangeで使用されている関数の中身を実装してください。
-    function changeLang(select) {
+    function changeLang() {
             let hyoji = document.getElementById('pldown').value;   
 
             if(hyoji == "日本語"){
